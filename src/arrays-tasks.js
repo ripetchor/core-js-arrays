@@ -25,7 +25,7 @@ const { is } = Object;
 function getIntervalArray(start, end) {
   const length = end - start + 1;
 
-  return Array.from({ length }).map((_, index) => start + index);
+  return Array.from({ length }, (_, index) => start + index);
 }
 
 /**
@@ -44,7 +44,7 @@ function getIntervalArray(start, end) {
 function sumArrays(arr1, arr2) {
   const length = Math.max(arr1.length, arr2.length);
 
-  return Array.from({ length }).map((_, index) => {
+  return Array.from({ length }, (_, index) => {
     const a = arr1[index];
     const b = arr2[index];
 
