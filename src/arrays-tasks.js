@@ -364,7 +364,7 @@ function createChunks(arr, size) {
 /**
  * Generates an array of odd numbers of the specified length.
  *
- * @param {number} len - The length of an array.
+ * @param {number} length - The length of an array.
  * @return {number[]} - An array of odd numbers.
  *
  * @example
@@ -373,8 +373,8 @@ function createChunks(arr, size) {
  *    generateOdds(2) => [ 1, 3 ]
  *    generateOdds(5) => [ 1, 3, 5, 7, 9 ]
  */
-function generateOdds(/* len */) {
-  throw new Error('Not implemented');
+function generateOdds(length) {
+  return Array.from({ length }, (_, index) => index * 2 + 1);
 }
 
 /**
